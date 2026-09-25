@@ -18,6 +18,22 @@
   line-height: 1.04;
 }
 
+.hero-word-fallback,
+.hero-word-swap,
+.hero-word-swap-to {
+  color: var(--blue-bright);
+}
+
+.hero-word-swap {
+  margin: 0 0.06em;
+  vertical-align: baseline;
+}
+
+.hero-word-swap:focus-visible {
+  outline-color: var(--blue-bright);
+  outline-offset: 0.12em;
+}
+
 .circuit-board-root {
   display: grid;
   min-height: 360px;
@@ -30,6 +46,21 @@
 .circuit-board-root > div,
 .circuit-board-root svg {
   max-width: 100%;
+}
+
+.kinetic-title {
+  display: inline;
+}
+
+.contact-grain-root {
+  position: absolute;
+  inset: 0;
+  opacity: 0.52;
+  pointer-events: none;
+}
+
+.contact-grain-root > div {
+  height: 100%;
 }
 
 @media (max-width: 1080px) {
